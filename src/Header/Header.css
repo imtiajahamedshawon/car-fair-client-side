@@ -1,0 +1,182 @@
+a{
+    text-decoration: none;
+}
+.offer button:hover{
+    background-color: goldenrod;
+    color: white;
+}
+.main-header a{
+   color: honeydew;
+}
+.banner-img{
+    max-height: 500px;
+}
+.offer{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.offer .img{
+    overflow: hidden;
+}
+.offer img{
+       overflow: hidden;
+       transition: transform 1s ease-in-out;
+}
+.offer img:hover{
+    transform: scale(1.2);
+    opacity: 0.6;
+}
+.offer-details{
+    background-color: rgb(204, 236, 248);
+    overflow: hidden;
+}
+.offer-details p{
+    text-align: justify;
+}
+.login-body{
+
+    padding-top: 160px;
+    padding-bottom: 240px;
+    background-color: skyblue;
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+.login form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid gray;
+   padding: 7px;
+   width: 35%;
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0px 0px 20px 2px grey;
+}
+.login form input{
+   width: 100%;
+    margin: 3px;
+}
+.top-footer{
+    background-color: #00224f;
+    color: white;
+    padding: 30px;
+}
+.main-footer{
+    background-image: linear-gradient(#0a0b0bab,#030303a6);
+    
+}
+.main-footer ul li{
+    list-style: none;
+    color: grey;
+}
+.copyright{
+    background-color: grey;
+}
+.place-order form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    align-items: center;
+}
+.place-order form input{
+    margin: 3px;
+    width: 60%;
+}
+.myOrders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.myOrders .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+td{
+    border: 1px solid grey;
+}
+.my-order{
+    min-height: 400px;
+    padding-bottom: 10px;
+}
+.not-found{
+    background-color: lightcoral;
+    padding: 50px;
+}
+.not-found h1{
+ font-size: 300px;
+ color: indigo;
+}
+.not-found p{
+    font-size: 30px;
+    color: red;
+}
+.top-banner{
+    position: relative;
+}
+.book{
+    padding: 10px;
+    box-shadow: 0px 0px 10px 2px grey;
+    border: 1px solid grey;
+    padding: 60px 30px;
+    border-radius: 5px ;
+    background-color: lightskyblue;
+}
+.book input{
+    margin: 2px;
+}
+.full-book{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.add-offer{
+    margin-top: 70px;
+    min-height: 400px;
+}
+.add-offer form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.add-offer form input{
+    width: 40%;
+    margin: 4px;
+}
+.tour{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    color: gray;
+}
+.tour .icon{
+    font-size: 40px;
+    padding-right: 3px;
+}
+.main-banner-first{
+    min-height: 300px;
+    color: rgb(230, 220, 220);
+}
+.main-banner-first img{
+    width: 100%;
+    max-height: 350px;
+} 
+
+.first h1{
+    color: rgb(87, 83, 83);
+}
+.first p{
+    text-align: justify;
+      color: black;
+      margin: 0 auto;
+}
+.first .name{
+    color: coral;
+}
