@@ -24,13 +24,15 @@ import Review from '../Review/Review';
 import Cars from '../../../shared/Cars/Cars';
 import MakeAdmin from '../MyOrder/MakeAdmin/MakeAdmin';
 import AdminRoute from '../../../Login/AdminRoute/AdminRoute';
+import Home from '../../Home/Home/Home';
+
 
 const drawerWidth = 240;
 
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const { user, admin, logOut } = useAuth()
+    const { admin, logOut } = useAuth()
 
     let { path, url } = useRouteMatch();
     const handleDrawerToggle = () => {
@@ -47,12 +49,16 @@ function Dashboard(props) {
             <Divider />
             <List>
 
+
+                <Link style={{ textDecoration: 'none' }} to={`${url}/home`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>Home</Button></Link>
+
                 <Link style={{ textDecoration: 'none' }} to={`${url}/myOrders`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>My Orders</Button></Link>
+
 
                 <Link style={{ textDecoration: 'none' }} to={`${url}/cars`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>Cars</Button></Link>
 
+
                 {admin && <Box>
-                   
                     <Link style={{ textDecoration: 'none' }} to={`${url}/makeAdmin`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>MakeAdmin</Button></Link>
                 </Box>}
 
@@ -88,7 +94,7 @@ function Dashboard(props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap component="div">
+                    <Typography style={{ color: '#77F5EA' }} variant="h6" noWrap component="div">
                         Dashboard
                     </Typography>
                 </Toolbar>
@@ -145,6 +151,9 @@ function Dashboard(props) {
                     </Route>
                     <Route path={`${path}/review`}>
                         <Review></Review>
+                    </Route>
+                    <Route path={`${path}/home`}>
+                        <Home></Home>
                     </Route>
                     <AdminRoute path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>

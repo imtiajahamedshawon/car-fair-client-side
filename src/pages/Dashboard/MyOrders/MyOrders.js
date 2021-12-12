@@ -15,7 +15,7 @@ const MyOrders = () => {
     const myOrders = useMyOrders()
     return (
         <Container>
-            <h1>My Orders</h1>
+            <h1 style = {{color: '#77F5EA'}}>My Orders</h1>
             {myOrders && <TableContainer >
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>

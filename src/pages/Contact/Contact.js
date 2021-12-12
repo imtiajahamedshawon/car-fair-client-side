@@ -8,7 +8,7 @@ const Contact = () => {
             <br></br>
             <br></br>
             <div className="bg-dark mt-5 text-light p-5">
-                <Card style={{ maxWidth: 950, margin: "0 auto", padding: "20px 5px" }}>
+                <Card style={{ maxWidth: 950,boxShadow: '3px 3px 10px 3px gray', margin: "0 auto", padding: "20px 5px" }}>
                     <Typography style={{ color: 'tomato', }} gutterBottom variant="h5">Contact Us</Typography>
                     <Typography gutterBottom color="textSecondary" variant="body2" component="p">Fill up the form and our team will get back to you within 24 hours</Typography>
                     <CardContent>

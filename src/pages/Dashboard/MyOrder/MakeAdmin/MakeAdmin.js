@@ -31,7 +31,7 @@ const MakeAdmin = () => {
     }
     return (
         <div>
-            <h1>Make an admin</h1>
+            <h1 style = {{color: '#77F5EA'}}>Make an admin</h1>
             <CardContent style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
                 <form onSubmit={handleAdminSubmit}>
                     <Grid container spacing={1}>

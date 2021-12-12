@@ -50,7 +50,7 @@ const Review = () => {
     }
     return (
         <Container>
-            <Typography variant='h4'>
+            <Typography style ={{color: '#77F5EA'}} variant='h4'>
                 Rate us
             </Typography>
             <Box
